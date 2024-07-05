@@ -1,5 +1,5 @@
 {
-  "name": "simple_inventory",
+  "name": "Envanter",
   "version": "1.0.0",
   "description": "Simple Inventory is a simple inventory management software, built to imporove the efficiency of business operations.",
   "main": "main.js",
@@ -7,11 +7,9 @@
     "start": "electron .",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "dev": "webpack --config=Scripts/config/webpack.dev.js --watch",
-    "build": "webpack --config=Scripts/config/webpack.prod.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish"
   },
   "author": "Jacob Mathew <simpleinventory@orangetreesoft.com>",
   "license": "Apache-2.0",
@@ -40,6 +38,7 @@
     "sqlite3": "^5.0.0"
   },
   "devDependencies": {
+    "@electron-forge/publisher-github": "^7.4.0",
     "electron": "^8.4.1",
     "gh-pages": "^6.1.1"
   }
