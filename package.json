@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@electron-forge/publisher-github": "^7.4.0",
-    "electron": "^8.4.1",
+    "electron": "^31.1.0",
     "gh-pages": "^6.1.1"
   }
 }
